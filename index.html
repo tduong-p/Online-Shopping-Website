@@ -1,165 +1,196 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD
-XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Bố cục cơ bản</title>
-    </head>
-    <style>
-        .heading {
-            height: 100px;
-            width: 100%;
-            margin-bottom: 5px;
-        }
-                    .logo {
-                        height: 100%;
-                        width: 29%;
-                        float: left;
-                        border-style: double;
-                    }
-                    .banner {
-                        height: 100%;
-                        width: 70%;
-                        margin-left: 1px;
-                        float: left;
-                        border-style: dotted;
-                    }
-        .head-link {
-            height: 25px;
-            width: 100%;
-            background-color: burlywood;
-        }
-                    .link a {
-                        float: left;
-                        display: block;
-                        width: 30%;
-                        margin-left: 0.7%;
-                        color: #f2f2f2;
-                        text-align: center;
-                        padding: 3px 16px;
-                        text-decoration: none;
-                    }
-                    .link a:hover {
-                        background-color: #ddd;
-                        color: black;
-                    }   
-        .giua {
-            margin-top: 5px;
-            max-width: 100%;
-            height: 400px;
-        }
-                    .left {
-                        width: 19%;
-                        height: 400px;
-                        float: left;
-                        border-style: none;
-                    }
-                                .upper-left {
-                                    width: 100%;
-                                    height: 40%;
-                                    background-color:darkslategrey;
-                                    margin-bottom: 1%;
-                                }
-                                .lower-left {
-                                    width: 100%;
-                                    height: 59%;
-                                    background-color:darkolivegreen;
-                                }
-                    .content {
-                        width: 60%;
-                        height: 400px;
-                        margin-left: 1%;
-                        float: left;
-                    }
-                                .upper-item-line {
-                                    width: 100%;
-                                    height: 50%;
-                                    margin-bottom: 10px;
-                                }
-                                        .item1 {
-                                            width: 48%;
-                                            height: 99%;
-                                            float: left;
-                                            margin-left: 0.8%;
-                                            border-style: solid;
-                                        }
-                                        .item2 {
-                                            width: 48%;
-                                            height: 99%;
-                                            float: left;
-                                            margin-left: 1%;
-                                            border-style: solid;
-                                        }
-                                .lower-item-line{
-                                    width: 100%;
-                                    height: 47%;
-                                }
-                                        .item-lower-1 {
-                                            height: 99%;
-                                            width: 31%;
-                                            float: left;
-                                            margin-left: 0.8%;
-                                            border-style: solid;
-                                        }
-                                        .item-lower-2 {
-                                            height: 99%;
-                                            width: 31%;
-                                            float: left;
-                                            margin-left: 1.5%;
-                                            border-style: solid;
-                                        }
-                                        .item-lower-3 {
-                                            height: 99%;
-                                            width: 31%;
-                                            float: left;
-                                            margin-left: 1.5%;
-                                            border-style: solid;
-                                        }
-                    .right {
-                        width: 19%;
-                        height: 400px;
-                        margin-left: 1%;
-                        float: left;
-                        background-color:antiquewhite ;
-                    }
-        .footer {
-            height: 20px;
-            width: 100%;
-            margin-top: 5px;
-            background-color: lightblue;
-        }
-    </style>
-    <body>
-        <div class="main"></div>
-        <div class="heading">
-            <div class="logo"></div>
-            <div class="banner"></div>
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <title>Layout</title>
+     <link rel="stylesheet" href="poly.css" />
+     </head>
+ <body>
+ <div class="container" style = "height: auto">
+     <header class="row">
+        <div class = "shopping-mall">
+            <h1>Online shopping mall</h1>
+            <h5>The center point of the professional programming</h5>
         </div>
-        <div class="head-link">
-            <div class="link">
-                <a href="Google.com">Google</a>
-                <a href="Facebook.com">Facebook</a>
-                <a href="Apple.us">Apple</a>
+        <img class = "pull-right" src="images/header-object.png"/> 
+     </header>
+     <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="glyphicon glyphicon-home"></span> Trang chủ
+                <span class="glyphicon glyphicon-list-alt"></span> Giới thiệu
+                <span class="glyphicon glyphicon-earphone"></span> Liên hệ
+                <span class="glyphicon glyphicon-envelope"></span> Góp ý
+                <span class="glyphicon glyphicon-question-sign"></span> Hỏi đáp
+                <span class="glyphicon glyphicon-user"></span> Tài khoản
+            </button>
+            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span> Trang chủ</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Giới thiệu<span class="sr-only">(current)</span></a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Liên hệ</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Góp ý</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Hỏi đáp</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Tài khoản <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <span class="glyphicon glyphicon-home"></span><span class = ?> 
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Engish</a></li>
+              <li><a href="#">Tiếng Việt</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+     <div class = "row">
+         <article class="col-sm-9">
+            <div class = "col-sm-4 poly-prod">
+                <div class = "panel panel-default">
+                    <div class = "panel-heading">
+                        <h4 class = "panel-title">
+                            Nokia
+                        </h4>
+                    </div>
+                    <div class = "panel-body">
+                       <img src="https://play-lh.googleusercontent.com/AiaCPXj1RC5ogSeJkPeGx2E7lUHlyszv-aQHsin7SUQ6Ptsj0AvTBDC1HGoWyAH6cA" height="228" width="292"/></div>
+                    <div class = "panel-footer">
+                            $ 100.25
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="giua"> 
-                <div class="left">
-                    <div class="upper-left"></div>
-                    <div class="lower-left"></div>
-                </div>
-                <div class="content">
-                    <div class="upper-item-line">
-                        <div class="item1"></div>
-                        <div class="item2"></div> 
+            <div class = "col-sm-4 poly-prod">
+                <div class = "panel panel-default">
+                    <div class = "panel-heading">
+                        <h4 class = "panel-title">
+                            Nokia
+                        </h4>
                     </div>
-                    <div class="lower-item-line">
-                        <div class="item-lower-1"></div>
-                        <div class="item-lower-2"></div> 
-                        <div class="item-lower-3"></div> 
+                    <div class = "panel-body">
+                       <img src="https://play-lh.googleusercontent.com/AiaCPXj1RC5ogSeJkPeGx2E7lUHlyszv-aQHsin7SUQ6Ptsj0AvTBDC1HGoWyAH6cA" height="228" width="292"/></div>
+                    <div class = "panel-footer">
+                            $ 100.25
                     </div>
                 </div>
-                <div class="right"></div>
-        </div>
-        <div class="footer"></div>
-    </body>
-</html>
+            </div>            <div class = "col-sm-4 poly-prod">
+                <div class = "panel panel-default">
+                    <div class = "panel-heading">
+                        <h4 class = "panel-title">
+                            Nokia
+                        </h4>
+                    </div>
+                    <div class = "panel-body">
+                       <img src="https://play-lh.googleusercontent.com/AiaCPXj1RC5ogSeJkPeGx2E7lUHlyszv-aQHsin7SUQ6Ptsj0AvTBDC1HGoWyAH6cA" height="228" width="292"/></div>
+                    <div class = "panel-footer">
+                            $ 100.25
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-4 poly-prod">
+                <div class = "panel panel-default">
+                    <div class = "panel-heading">
+                        <h4 class = "panel-title">
+                            Nokia
+                        </h4>
+                    </div>
+                    <div class = "panel-body">
+                       <img src="https://play-lh.googleusercontent.com/AiaCPXj1RC5ogSeJkPeGx2E7lUHlyszv-aQHsin7SUQ6Ptsj0AvTBDC1HGoWyAH6cA" height="228" width="292"/></div>
+                    <div class = "panel-footer">
+                            $ 100.25
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-4 poly-prod">
+                <div class = "panel panel-default">
+                    <div class = "panel-heading">
+                        <h4 class = "panel-title">
+                            Nokia
+                        </h4>
+                    </div>
+                    <div class = "panel-body">
+                       <img src="https://play-lh.googleusercontent.com/AiaCPXj1RC5ogSeJkPeGx2E7lUHlyszv-aQHsin7SUQ6Ptsj0AvTBDC1HGoWyAH6cA" height="228" width="292"/></div>
+                    <div class = "panel-footer">
+                            $ 100.25
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-4 poly-prod">
+                <div class = "panel panel-default">
+                    <div class = "panel-heading">
+                        <h4 class = "panel-title">
+                            Nokia
+                        </h4>
+                    </div>
+                    <div class = "panel-body">
+                       <img src="https://play-lh.googleusercontent.com/AiaCPXj1RC5ogSeJkPeGx2E7lUHlyszv-aQHsin7SUQ6Ptsj0AvTBDC1HGoWyAH6cA" height="228" width="292"/></div>
+                    <div class = "panel-footer">
+                            $ 100.25
+                    </div>
+                </div>
+            </div>
+        </article>
+    <div class="sidebar">
+        <aside>
+            <div class = "poly-cart">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img class="col-sm-5" src="images/shoppingcart.gif"/>
+                        <ul class="col-sm-7">
+                            <li>100 items</li>
+                            <li>$56.8</li>
+                            <li><a href="#">Xem giỏ hàng</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form>
+                        <input placeholder="Keywords" class="form-control"/>
+                    </form>
+                </div>
+            </div> 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class = "glyphicon glyphicon-th-list"></span>
+                    <strong>Chủng Loại</strong>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">Điện thoại di động</a>
+                    <a href="#" class="list-group-item">Máy tính xách tay</a>
+                    <a href="#" class="list-group-item">Máy tính để bàn</a>
+                    <a href="#" class="list-group-item">Quạt máy</a>
+                    <a href="#" class="list-group-item">Tivi</a>
+                    <a href="#" class="list-group-item">Tủ lạnh</a>
+                </div>
+            </div> 
+            
+        </aside> 
+    </div>
+     </div>
+     <footer class="panel panel-default">
+         <div class = "panel-heading text-center">
+             <p>CodeGym &copy; 2017</p>
+         </div>
+     </footer>
+ </div>
+ </body>
+ </html> 
